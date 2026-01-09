@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regex Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Regex Matcher</h1>
+
+    <form method="POST">
+
+        <label>Test String:</label><br>
+        <textarea name="test_string" rows="6" required>{{ test_string }}</textarea><br><br>
+
+        <label>Regular Expression:</label><br>
+        <input type="text" name="regex_pattern" value="{{ regex_pattern }}" required><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <hr>
+
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+
+    {% if matches %}
+        <h3>Matched Results:</h3>
+        <ul>
+            {% for match in matches %}
+                <li>{{ match }}</li>
+            {% endfor %}
+        </ul>
+    {% elif matches is not none and not error_message %}
+        <p>No matches found.</p>
+    {% endif %}
+
+</body>
+</html>
