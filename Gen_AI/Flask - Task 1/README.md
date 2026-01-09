@@ -16,7 +16,7 @@ The application accepts a username as a query parameter from the URL, converts i
 ---
 
 ## Project Structure
-
+``` text
 090126_Flask - Task 1/
 │
 ├── app.py
@@ -25,7 +25,7 @@ The application accepts a username as a query parameter from the URL, converts i
 ├── templates/
 │ └── index.html
 └── venv/
-
+```
 
 
 ---
@@ -66,6 +66,7 @@ KISHORE
 
 ### other Route
 http://127.0.0.1:5000/reverse?username=kishore
+
 
 
 
