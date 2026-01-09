@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Task 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>WELCOME</h1>
+
+    {% if name %}
+        <h2>{{ name }}</h2>
+    {% else %}
+        <p>Please add <b>?username=your_name</b> in the URL</p>
+    {% endif %}
+
+</body>
+</html>
