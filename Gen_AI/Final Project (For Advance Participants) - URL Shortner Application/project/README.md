@@ -32,9 +32,7 @@ The application is designed as an individual project, following clean folder str
 ---
 
 ## 📁 Project Structure
-
 ```
-text
 
 project/
 │
@@ -61,7 +59,7 @@ project/
 ├── run.py
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
@@ -127,5 +125,6 @@ http://127.0.0.1:5000/
 ## 👤 Author
 
 **Krishna Kishore**
+
 
 
